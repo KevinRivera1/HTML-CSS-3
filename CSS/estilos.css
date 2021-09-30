@@ -78,15 +78,29 @@ header{
     color: rgb(14, 13, 13);
 }
 
+.titulo{
+    color: #28362d;
+    margin-left: 20px;
+}
+
 .carousel{
     display:flex;
     position: relative;
-    height:40vh;
+    height:55vh;
     width: 100%;
     overflow: scroll;
     overflow-x: scroll;
     overflow-y: hidden;
 }
+.carousel::-webkit-scrollbar{
+    -webkit-appearance: none;
+}
+.carousel::-webkit-scrollbar-thumb{
+    background-color: #354139;
+    border-radius: 15px;
+    border:2px solid #354139;
+}
+
 
 
 .carousel__container{
@@ -127,4 +141,53 @@ header{
     width:200px ;
     height:250px ;
     object-fit: cover;
+}
+
+.carousel--item-detail{
+    position: absolute;
+    color:#e8b634;
+    background: linear-gradient (rgb(255,255,0.5), rgb(0, 0, 0));
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity:1;
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+.carousel--item-detail img{
+    width: 50px;
+    height: 50px;
+    margin: 0;
+    padding: 0;
+}
+.carousel--item-detail h4,
+.carousel--item-detail p{
+    margin:0 0 3px 7px;
+    padding: 0;
+}
+
+
+.footer{
+    width:100% ;
+    margin-left: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.footer a{
+    text-decoration: none;
+    padding: 10px;
+    color: #b7e4c7;
+}
+
+@media only screen and (min-width: 500px){
+    .footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+    padding: 10px;
+    }
 }
