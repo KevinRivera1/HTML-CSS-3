@@ -128,6 +128,9 @@ body{
     margin-top: 10px;
     color: #ffff;
 }
+.links{
+    flex-direction: column;
+}
 
 
 @media (min-width: 1264px){
@@ -159,6 +162,7 @@ body{
         display:flex;
         text-align: center;
         justify-content:center;
+        flex-direction: row;
         margin-right: 28px;
     }
     .lin{
